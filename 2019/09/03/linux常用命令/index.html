@@ -475,8 +475,8 @@
 <p>4、上传目录到服务器</p>
 <p><code>scp -r local_dir username@servername:remote_dir</code><br>例如：<code>scp -r test root@192.168.0.101:/var/www/</code> 把当前目录下的test目录上传到服务器的/var/www/ 目录</p>
 <h3 id="两台服务器的文件操作"><a href="#两台服务器的文件操作" class="headerlink" title="两台服务器的文件操作"></a>两台服务器的文件操作</h3><p>首先两台服务器必须是可以ping通的<br>例：<br>ping 10.22.137.10<br>ping通之后：<br>1、复制文件<br>格式：<br>scp 目录/文件名.文件格式 目标服务器用户名@ip地址：目标服务器目录<br>例：</p>
-<p>scp /backup/test/md3/export.sh <a href="mailto:&#105;&#x61;&#105;&#110;&#115;&#116;&#49;&#x31;&#x40;&#x31;&#48;&#46;&#x32;&#50;&#x2e;&#x31;&#51;&#x37;&#46;&#x31;&#x31;">&#105;&#x61;&#105;&#110;&#115;&#116;&#49;&#x31;&#x40;&#x31;&#48;&#46;&#x32;&#50;&#x2e;&#x31;&#51;&#x37;&#46;&#x31;&#x31;</a>:/ssx/dev/md<br>1<br>2、复制目录（包括目录下的文件）</p>
-<p>scp -r /backup/test/md3  <a href="mailto:&#105;&#x61;&#x69;&#x6e;&#x73;&#x74;&#49;&#x31;&#64;&#49;&#x30;&#x2e;&#50;&#50;&#x2e;&#x31;&#x33;&#x37;&#x2e;&#x31;&#x31;">&#105;&#x61;&#x69;&#x6e;&#x73;&#x74;&#49;&#x31;&#64;&#49;&#x30;&#x2e;&#50;&#50;&#x2e;&#x31;&#x33;&#x37;&#x2e;&#x31;&#x31;</a>:/ssx/dev/md</p>
+<p>scp /backup/test/md3/export.sh <a href="mailto:&#x69;&#x61;&#x69;&#x6e;&#115;&#116;&#49;&#49;&#x40;&#x31;&#x30;&#x2e;&#50;&#50;&#46;&#x31;&#x33;&#x37;&#x2e;&#49;&#x31;">&#x69;&#x61;&#x69;&#x6e;&#115;&#116;&#49;&#49;&#x40;&#x31;&#x30;&#x2e;&#50;&#50;&#46;&#x31;&#x33;&#x37;&#x2e;&#49;&#x31;</a>:/ssx/dev/md<br>1<br>2、复制目录（包括目录下的文件）</p>
+<p>scp -r /backup/test/md3  <a href="mailto:&#x69;&#97;&#105;&#110;&#115;&#x74;&#x31;&#49;&#64;&#49;&#48;&#46;&#x32;&#x32;&#46;&#49;&#x33;&#55;&#x2e;&#x31;&#x31;">&#x69;&#97;&#105;&#110;&#115;&#x74;&#x31;&#49;&#64;&#49;&#48;&#46;&#x32;&#x32;&#46;&#49;&#x33;&#55;&#x2e;&#x31;&#x31;</a>:/ssx/dev/md</p>
 <hr>
 <h2 id="创建用户"><a href="#创建用户" class="headerlink" title="创建用户"></a>创建用户</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">sudo useradd -m -s /bin/bash -d /home/username username</span><br><span class="line">sudo passwd username #密码设置</span><br><span class="line">sudo vi /etc/sudoers #添加sudo权限</span><br><span class="line"></span><br><span class="line">userdel -r username  # 删除用户及主目录</span><br></pre></td></tr></table></figure>
 
